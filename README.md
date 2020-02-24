@@ -11,7 +11,7 @@ To run, call the tex program you would like to run. For example, to run pdflatex
 ```
 $ docker run --rm -v "$PWD":/workdir -w /workdir mintexlive pdflatex *.tex
 ```
-If no command is given the container will echo the environment variable `TEX_PACKAGES` specified at container build time.
+If no command is given the container will echo the environment variable `TEX_PACKAGES` specified at container build time:
 ```
 $ docker run --rm mintexlive 
 Installed with tex packages: koma-script verbatimbox readarray listofitems advdate marvosym babel-german
